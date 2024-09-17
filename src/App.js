@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react'
+import Form from './components/Form'
+function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='w-full min-h-screen flex justify-center px-4'>
+      <main className='my-8 w-full md:max-w-2xl'>
+        <h1 className='text-3xl text-gray-950 font-bold'>Gerador de <span className='text-blue-600'>Currículo</span></h1>
+        <Form/>
+      </main>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
